@@ -1,0 +1,40 @@
+<ons-page id="Regis">
+    <!-- Toolbar -->
+    <ons-row class="fixed">
+        <ons-toolbar class="Albar">
+            <ons-col width="20%">
+                <div class="AlbackBtb">
+                    <i class="fas fa-arrow-left AlpacaIconBig" onclick="backbtn()"></i>
+                </div>
+            </ons-col>
+            <ons-col width="60%">
+                <div class="Albartext" id="title">Register</div>
+            </ons-col>
+            <ons-col width="20%"></ons-col>
+        </ons-toolbar>
+    </ons-row>
+    <!-- End of Toolbar -->
+
+    <ons-card style="margin-top: 65px;">
+        <div style="text-align: center; margin-top: 20px;">
+            <p>
+                <ons-input id="Email" modifier="underbar" type="Email" placeholder="Email" style="width:70%" float>
+                </ons-input>
+            </p>
+            <p>
+                <ons-input id="password" modifier="underbar" type="password" placeholder="Password" style="width:70%"
+                    float></ons-input>
+            </p>
+            <p>
+                <ons-input id="password2" modifier="underbar" type="password" placeholder="Confirm Password"
+                    style="width:70%" float>
+                </ons-input>
+            </p>
+
+            <p style="margin-top:10px;">
+                <ons-button id="registerAccountbtn" class="Albtn">Register and
+                    Sign-in</ons-button>
+            </p>
+        </div>
+    </ons-card>
+</ons-page>

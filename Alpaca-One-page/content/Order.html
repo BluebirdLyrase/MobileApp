@@ -1,0 +1,61 @@
+<ons-page id="Order">
+
+    <!-- Toolbar -->
+    <ons-row class="fixed">
+        <ons-toolbar class="Albar">
+            <ons-col width="20%">
+                <div class="AlbackBtb">
+                    <i class="fas fa-arrow-left AlpacaIconBig" onclick="itemNoti();backbtn();"></i>
+                </div>
+            </ons-col>
+            <ons-col width="60%">
+                <div class="Albartext" id="title">Place Order</div>
+            </ons-col>
+            <ons-col width="20%"></ons-col>
+        </ons-toolbar>
+    </ons-row>
+    <!--End of Toolbar -->
+
+    <ons-card style="margin-top: 65px;">
+
+        <div style="text-align:center">
+            <img src="" style="width: 200px ; height: auto;" id="ResPic"><br>
+            <b style="font-size: 20px;" id="Resname"></b>
+
+        </div>
+        <hr>
+        <table align="center" width="100%" id="orderTable">
+        </table>
+        <center style="font-size: 20px; margin-top:10px;" id="total"></center>
+        <div style="text-align: center; margin-top: 15px;">
+
+            <p>
+                <ons-input id="Coupon" modifier="underbar" type="text" placeholder="Enter Coupon Here" style="width:70%"
+                    float>
+                </ons-input>
+            </p>
+            Pay via
+            <p style="margin-top: 30px;">
+                <ons-button class="creditbtn">Credit Card</ons-button>
+            </p>
+
+            <p style=" margin-top: 8px;">
+                <ons-button class="masterbtn">Master Card
+                </ons-button>
+            </p>
+
+            <p style="margin-top: 8px;">
+                <ons-button class="paypalbtn">Paypal</ons-button>
+                </ons-row>
+            </p>
+            <p style="margin-top: 8px;">
+                <ons-button class="codbtn">Cash on Delivery
+                </ons-button>
+                </ons-row>
+            </p>
+
+        </div>
+    </ons-card>
+
+    <div style="height: 60px"></div>
+</ons-page>

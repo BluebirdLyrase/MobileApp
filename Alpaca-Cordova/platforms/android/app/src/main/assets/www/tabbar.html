@@ -1,0 +1,41 @@
+<ons-page id="tabbar">
+
+    <ons-row>
+        <ons-toolbar class="Albar">
+            <ons-col width="20%">
+                <!-- Toolbar-button with different icons depending on the platform. -->
+                <ons-toolbar-button component="button/menu" id="menubtn"  ><i
+                        class="fas fa-bars AlpacaIconBig"></i>
+                </ons-toolbar-button>
+            </ons-col>
+            <ons-col width="60%">
+                <div class="Albartext" id="title">Recommended</div>
+            </ons-col>
+            <ons-col width="20%"></ons-col>
+        </ons-toolbar>
+    </ons-row>
+
+    <ons-tabbar id="myTabbar" position="bottom">
+        <ons-tab id="tabbar1" page="tab/Recommended.html" active class="tabBtnActivated">
+            <i class="fas fa-fire AlpacaIcon">
+                <div class="AlpacaIconText">Recommended</div>
+            </i>
+        </ons-tab>
+        <ons-tab id="tabbar2" page="tab/Search.html" class="tabBtn">
+            <i class="fas fa-search AlpacaIcon">
+                <div class="AlpacaIconText">Search</div>
+            </i>
+        </ons-tab>
+
+        <ons-tab id="tabbar4" page="tab/NearBy.html" class="tabBtn">
+            <i class="fas fa-compass AlpacaIcon">
+                <div class="AlpacaIconText">Nearby</div>
+            </i>
+        </ons-tab>
+        <ons-tab id="tabbar3" page="tab/Setting.html" class="tabBtn">
+            <i class="fas fa-cog AlpacaIcon">
+                <div class="AlpacaIconText">Setting</div>
+            </i>
+        </ons-tab>
+    </ons-tabbar>
+</ons-page>

@@ -1,0 +1,28 @@
+<ons-page id="Address">
+    <!-- Toolbar -->
+    <ons-row class="fixed">
+        <ons-toolbar class="Albar">
+            <ons-col width="20%">
+                <div class="AlbackBtb">
+                    <i class="fas fa-arrow-left AlpacaIconBig" onclick="backbtn()"></i>
+                </div>
+            </ons-col>
+            <ons-col width="60%">
+                <div class="Albartext" id="title">Address</div>
+            </ons-col>
+            <ons-col width="20%"></ons-col>
+        </ons-toolbar>
+    </ons-row>
+    <!-- End of Toolbar -->
+    <ons-row>
+        <div id="map"></div>
+    </ons-row>
+    <ons-row>
+        <pre id='coordinates' class='coordinates'></pre>
+        <ons-fab position="bottom right" id="setaddress" onclick="setAddress()">
+            <ons-icon>
+                    <i class="fa fa-map-pin"></i>
+            </ons-icon>
+        </ons-fab>
+    </ons-row>
+</ons-page>

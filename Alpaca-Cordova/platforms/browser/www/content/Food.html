@@ -1,0 +1,27 @@
+<ons-page id="Food">
+    <!-- Toolbar -->
+    <ons-row class="fixed">
+        <ons-toolbar class="Albar">
+            <ons-col width="20%">
+                <div class="AlbackBtb">
+                    <i class="fas fa-arrow-left AlpacaIconBig" onclick="backbtnconfirm();"></i>
+                </div>
+            </ons-col>
+            <ons-col width="60%">
+                <div class="Albartext" id="title">Menu</div>
+            </ons-col>
+            <ons-col width="20%"></ons-col>
+        </ons-toolbar>
+    </ons-row>
+    <!--End of Toolbar -->
+
+    <ons-card id="foodcard" style="margin-top: 65px;">
+    </ons-card>
+
+    <p style="margin-top:10px; text-align: center; ">
+        <ons-button id="orderBtn" class="orderBtn">
+            <span class="orderText absolute">Order</span>
+            <span class="notification notification--material orderNoti" id="orderNoti"></span>
+        </ons-button>
+    </p>
+</ons-page>

@@ -1,0 +1,33 @@
+
+
+
+.AlpacaIconText
+{
+    font-size: 10px;
+    margin-top: 5px;
+    color:white;
+    }
+
+.AlpacaIcon{ 
+    font-size: 25px;
+    margin-top: 5px;
+    color:white;
+    
+}
+
+
+.AlpacaIconBig{
+    font-size: 30px;
+    margin-top: 14%;
+    color:white;
+}
+
+.buybtn{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
+    font-size: 40px;
+}

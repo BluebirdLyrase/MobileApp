@@ -1,0 +1,188 @@
+.fixed {
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    /*--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Need to test in real mobile device*/
+  }
+
+  @media not screen and (min-device-width:320px) and (max-device-width:375px) 
+  and (max-device-width:414px) and (max-device-width:675px){
+    .absolute{
+        position:  absolute;
+    }
+    .orderNoti{
+        left:50px;
+      }
+  } 
+
+.orderText{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+.orderBtn{
+    background-color: rgb(255, 163, 26); 
+    width:95%;
+    font-size: 25px;
+    color:white;
+}
+
+
+
+.buyBtn{
+    background-color: rgb(255, 163, 26); 
+    color:white; 
+    width: 45px; 
+    height: 25px; 
+}
+
+
+.star{
+    color: rgb(255, 163, 26);
+}
+.grey{
+    color:grey;
+}
+
+.open{
+    text-align: right ;
+    color:green;
+}   
+
+.close{
+    text-align: right ;
+    color:red;
+}
+
+.AlbackBtb{
+    margin-left:10px;
+}
+
+.tabBtn{
+    background-color: rgb(255, 163, 26); 
+}
+
+.tabBtnActivated{
+    background-color: rgb(173, 232, 105);
+}
+
+.AllistTitle{
+    background-color: rgb(255, 163, 26); 
+    font-size: 20px; color:white;
+}
+
+.Alhr{
+    margin-right: 5%;
+    margin-left: 5%;
+    border-style: solid; 
+    border-color: rgba(150, 157, 177, 0.329);
+}
+
+.Albtn{
+    background-color: rgb(255, 163, 26); 
+    width:70%;
+}
+
+.Albar
+{
+    height: 55px; 
+    background-color: rgb(255, 163, 26);
+}
+
+.Albartext
+{
+    margin-top:13px; 
+    color:white; 
+    font-size: 25px; 
+    text-align:center; 
+    white-space: nowrap;
+}
+
+.AlpacaIconText
+{
+    font-size: 10px;
+    margin-top: 5px;
+    color:white;
+    }
+
+.AlpacaIcon{ 
+    font-size: 25px;
+    margin-top: 5px;
+    color:white;
+}
+
+
+.AlpacaIconBig{
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color:white;
+}
+
+.buyBtntext{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); 
+    font-size: 40px;
+}
+
+.deletebtn{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+
+.recomended_item {
+    padding-left: 10px;
+}
+
+.recomended_item_title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    display: table;
+
+}
+
+.recomended_list {
+    height: 170px;
+    margin-top: 10px;
+}
+
+.creditbtn{
+    font-size: 20px; 
+    background-color: rgb(73, 96, 199); 
+    width:70%;
+}
+
+.masterbtn{
+    font-size: 20px; 
+    background-color: rgb(71, 146, 245); 
+    width:70%;
+}
+
+.paypalbtn{
+    font-size: 20px; 
+    background-color: rgb(150, 67, 150);
+    width:70%;
+}
+
+.codbtn{
+    font-size: 20px; 
+    background-color: rgb(255, 163, 26);
+    width:70%;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyC2pyNOOA-f53D-UCcoGQPJECnEc5SLC6g",
+            authDomain: "alpaca-one-page.firebaseapp.com",
+            databaseURL: "https://alpaca-one-page.firebaseio.com",
+            projectId: "alpaca-one-page",
+            storageBucket: "alpaca-one-page.appspot.com",
+            messagingSenderId: "598311265035",
+            appId: "1:598311265035:web:602895d35ecefd48b8f80e"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+        $.get("Chinese.json", function (data, status) {
+            for (var index in data) {
+                var Res = data[index];
+                db.collection("Resturant").doc(Res.id).set({
+                    id: Res.id,
+                    name: Res.name,
+                    img: Res.img,
+                    distance: Res.distance,
+                    status: Res.status,
+                    star: Res.star,
+                    reviewer: Res.reviewer,
+                    catagory: Res.catagory
+                })
+
+                for (var index in Res.Food) {
+                    db.collection("Resturant").doc(Res.id).collection('Food').add({
+                        name: Res.Food[index].name,
+                        des: Res.Food[index].des,
+                        price: Res.Food[index].price
+                    })
+                    console.log(Res.Food[index].name)
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
